@@ -13,36 +13,49 @@
 
 <body>
     <!-- search container -->
-    <div class="container mt-4 bg-light shadow p-3 mb-5 rounded ">
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="raised-block">
-                    <h3>Search for a city:</h3>
-                    <form class="mt-2">
-                        <div class="form-group mt-2">
-                            <input type="email" class="form-control mt-2" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp"> <button type="submit" class="btn btn-primary mt-2">Submit</button>
-                        </div>
-                    </form>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-4 bg-light p-2">
+                <div class="col">
+                        <h3>Search for a city:</h3>
+                        <hr>
+                        <form action="/html/tags/html_form_tag_action.cfm" class="form-inline">
+                            <label class="mr-sm-2 mb-2" for="city-name">City Name</label>
+                            <input type="text" class="form-control mr-sm-2 mb-2" id="city-name"
+                                name="city-name">
+                            <label class="mr-sm-2 mb-2" for="country-name">Country Name</label>
+                            <input type="text" class="form-control mr-sm-2 mb-2" id="country-name"
+                                name="country-name">
+                            <button type="submit" class="btn btn-primary mt-2 mt-sm-0">Submit</button>
+                        </form>
+                    
+
                 </div>
             </div>
-            <div class="col-sm-8">
-                <div class="raised-block">
+            <div class="col-lg-4 bg-light p-2">
+                <div class="col">
+                    <h3>Weather:</h3>
+                    <div class="jumbotron jumbotron-fluid">
+                            <div class="container">
+                              <h1 class="display-4">Weather:</h1>
+                              <p class="lead" id="weather-jumbo">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                            </div>
+                          </div>
+                </div>
+            </div>
+            <div class="col-lg-4 bg-light p-2">
+                <div class="col">
                     <h3>Forecast:</h3>
+                    <div class="jumbotron jumbotron-fluid">
+                            <div class="container">
+                              <h1 class="display-4">Forecast:</h1>
+                              <p class="lead" id="forecast-jumbo">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                            </div>
+                          </div>
                 </div>
             </div>
         </div>
-
     </div>
-
-    <!-- weather display  -->
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="/assets/script.js"></script>
 </body>
